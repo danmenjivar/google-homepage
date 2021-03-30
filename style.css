@@ -1,7 +1,43 @@
+html{
+    font-family: arial, sans-serif;
+    font-size: small;
+}
+
+.header {
+    padding: 6px;
+}
+
+.header-left{
+    float: left;
+    padding-right: 15px;
+}
+
+.header-right{
+    float: right;
+    padding-right: 15px;
+}
+
+
+body {
+    background: #fff;
+    color: #222;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#navigation-bar li{
+    display: inline;
+}
 
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 40%;
+}
+
+#search-box{
+    
 }
