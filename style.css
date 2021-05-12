@@ -3,41 +3,39 @@ html{
     font-size: small;
 }
 
-.header {
-    padding: 6px;
-}
-
-.header-left{
-    float: left;
-    padding-right: 15px;
-}
-
-.header-right{
-    float: right;
-    padding-right: 15px;
-}
-
-
 body {
     background: #fff;
     color: #222;
 }
 
-ul{
-    list-style-type: none;
+.navbar {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
-#navigation-bar li{
-    display: inline;
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+.navbar ul li {
+    display: inline-block;
 }
 
-#search-box{
-    
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.g-logo {
+    margin: 30% 0 5% 0;
+    align-self: center;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
