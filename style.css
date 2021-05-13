@@ -1,41 +1,186 @@
-html{
+/*
+========================================
+CSS Reset
+========================================
+*/
+* {
+    padding: 0;
+    margin: 0;
     font-family: arial, sans-serif;
-    font-size: small;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 body {
     background: #fff;
     color: #222;
+    height: 100vh;
 }
 
+
+/*
+========================================
+Main Flex Container
+========================================
+*/
+
+/* Flex Container */
+.main-flex-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+
+/*
+========================================
+- Navbar 
+  (a flex item of main & flex container)
+========================================
+*/
+
 .navbar {
-    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 13px;
     display: flex;
+    align-self: normal; /* rewrite the align-item center value */
+    align-items: center;
+}
+
+/* Flex Items inside Navbar */
+.navbar li {
+    margin: 5px;
+}
+
+.navbar .mail {
+    margin-left: auto; /*Pushes elements after mail to the far right*/
+}
+
+.dots-app{
+    display: block;
+}
+
+.dots {
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+}
+
+.login-btn {
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background-color: #4285f4;
+}
+/* End of Navbar */
+
+/*
+========================================
+- Center Flex Container 
+  (a flex item of main & flex container)
+========================================
+*/
+.center-flex-container {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    border: 1px solid #e4e4e4;
+    border-radius: 24px ;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+}
+.search-box input{
+    margin: 0;
+    border: none;
+    height: 34px;
+    width: 500px;
+    border-radius: 60px;
+}
+
+.search-box:hover,
+.search-box:focus {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    outline: none;
+}
+
+.search-box input:hover,
+.search-box input:focus {
+    outline: none;
+}
+.search-box .search-icon {
+    flex: 1 1 24px;
+    opacity: 0.3;
+    margin-left: 10px;
+}
+
+.search-btn-container {
+}
+
+.search-btn {
+    border: 1px solid transparent;
+    font-size: 14px;
+    color: #5f6368;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+/*
+========================================
+Footer
+ (a flex item of main & flex container)
+========================================
+*/
+
+.bottom-footer {
+    /* flex: 1 1 100%; */
+    background-color: rgb(247, 242, 242);
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: #70757A;
+}
+
+.bottom-footer > * {
+    flex: 1 1 100%;
+    margin-top: 8px;
+}
+
+.footer-navbar{
+    flex: 1;
+    margin-top: 15px;
+    display: flex;
+    align-self: normal;
     justify-content: space-between;
 }
 
-
-.navbar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.navbar ul li {
-    display: inline-block;
-}
-
-
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.g-logo {
-    margin: 30% 0 5% 0;
-    align-self: center;
-    flex-shrink: 0;
-    flex-grow: 0;
+.footer-navbar a {
+    padding: 10px;
 }
