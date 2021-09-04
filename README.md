@@ -1,5 +1,3 @@
-This is a simple recreation of the Google homepage using HTML and CSS.
-
 # Google Homepage
 
 ### [Live Demo](https://danmenjivar.github.io/google-homepage/)
